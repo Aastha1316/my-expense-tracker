@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>MyPiggyBank</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+		<script>
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+			integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+			crossorigin="anonymous"
+		</script>
+	</head>
+
+<body>
+<nav class="navbar navbar-light" style="background-color: #967E76;">
+        <span class="navbar-brand mb-0 h1">My Expense Tracker</span>
+    </nav>
+    <h2><b>Hi! This is a site to track your expenses.</b></h2>
+    <img class="okk" src="images/okk.jfif" alt="okk">
+    <div class="container-fluid" style="min-height: 100vh">
+
+        <div class="container">
+            <div class="jumbotron mt-4">
+                <div class="row">
+                    <div class="col-md-4" id="headerIncome">Total Income:</div>
+                    <div class="col-md-4" id="headerExpense">Total Expense:</div>
+                    <div class="col-md-4" id="headerItem">Total balance:</div>
+                </div>
+            </div>
+            <div class="jumbotron mt-4">
+                <form name="mainForm" id="mainForm">
+                    <div class="input-group mb-3">
+                        Select your preferred Income/Expense type:
+                        <div class="options">
+                            <input type="radio" id="incomeType"
+                            name="sourceType" value="incomeType" checked>
+                            <label for="incomeType">Income Type</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" id="expenseType"
+                            name="sourceType" value="expenseType">
+                            <label for="expenseType">Expense Type</label>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputAmount"
+                            placeholder="Amount spent"
+                            aria-label="Amount spent"
+                            aria-describedby="spent in rupee"
+                            required="required"
+                        />
+                        <div class="input-group-append">
+                            <span class="input-group-text"
+                            id="spent in rupee">₹</span>
+                        </div>
+                        <div class="invalid-tooltip">
+                            Please check the input
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                            id="spent at">@</span>
+                        </div>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputDescp"
+                            placeholder="Spent On"
+                            aria-label="Spent On"
+                            aria-describedby="Spent at"
+                            required="required"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="submit" id="btnSelector">Add</button>
+                        </div>
+                        <div class="invalid-tooltip">
+                            Wrong Input. Check and enter again.
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+        <ul class="list-group" id="tableItem"></ul>
+        </div>
+    </div>
+</div>
+    <script src="js/budget.js"></script>
+</body>
+</html>

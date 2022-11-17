@@ -1,0 +1,53 @@
+body{
+    background-color: #F2DAC4;
+    display:flex;
+    justify-content: center;
+    height:fit-content;
+    flex-direction: column;
+    padding-top:50px:
+}
+nav{
+    width: 100%;
+}
+input[type=radio] {
+    margin:0 0.25rem 0 1rem;
+    align-self: center;
+}
+
+h2{
+  text-shadow: 2px 2px #3B3E51;
+  text-align: center;
+  color: #704F4F;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.okk{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    padding: 5px;
+    width: 300px;
+    height: 210px;
+}
+.options{
+    color: #282A3A;
+    display: flex;
+    flex-grow: 1;
+    justify-content:center;
+}
+.jumbotron{
+  padding: 20px;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #411530;
+}
+.row{
+  color: #411530;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.c{
+  background-color: #FFEFD6;
+}
